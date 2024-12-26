@@ -14,15 +14,15 @@
             <ul><!-- Lista não ordenada para links do nosso menu.-->
                 <li><a href="#Sobre">Sobre mim</a></li>
                 <li><a href="#Projetos">Projetos</a></li>
-                <li><a href="#Contato">Contato</a></li>   
-                <li><a href="https://google.com.br/" target="_blank">Google</a></li>            
+                <li><a href="#Contato">Contato</a></li>
+                <li><a href="https://google.com.br/" target="_blank">Google</a></li>
             </ul>
         </nav>
+    
     </header>
     <section id="Sobre">
         <h2>Sobre mim</h2>
-        <img src="IMG_0421.JPG" title="Imagem de perfil"
-            alt="Imagem de Perfil">
+        <img src="batman.png" title="Imagem de perfil do Batman" alt="Imagem de Perfil Batman">
 
         <article>
 
@@ -42,24 +42,90 @@
             </ul>
         </aside>
     </section>
+
     <section id="Projetos">
+
         <h2>Projetos</h2>
+
         <article>
+
             <h3>Portólio</h3>
+
             <p>Este foi o primeiro site que desenvolvi, estudando front-end</p>
         </article>
+
     </section>
+    <section id="Habilidades">
+
+        <h2>Habilidades e tecnologias</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tecnologia</th>
+                    <th>Nível</th>
+                    <th>Descrição</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Iniciante</td>
+                        <td>Capaz de contruir estruturas de páginas web semânticas e responsivas.</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Intermédiario</td>
+                        <td>Experiência com flebox, grid e animações CSS</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Básico</td>
+                        <td>Desenvolvimento de scripts do lado do cliente para interações</td>
+                    </tr>
+                </tbody>
+            </thead>
+        </table>
+
+    </section>
+
     <footer>
+
         <p>Direito reservado a Misael</p>
 
         <section id="Contato">
 
             <h2>Contato</h2>
             <p>Tem um projeto em mente? Entre em contato!</p>
-            
+            <form action="">
+
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone"><br>
+
+                <label for="assunto" >Assunto: </label>
+                <select name="assunto" id="assunto">
+                    <option value="orçamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+<br>
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea> <br>
+                <input type="checkbox" id="inscricao" name="inscricao" >
+                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label>
+                <br>
+                <input type="submit" value="Enviar mensagem">
+            </form>
+
             <address>
+
                 E-mail: <a href="mailto:misaless2016@gmail.com">misaless2016@gmail.com</a> <br>
                 Telefone: <a href="tel:+5547920027543">+55 47 920027543</a>
+                
             </address>
         </section>
     </footer>
